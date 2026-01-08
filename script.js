@@ -32,22 +32,26 @@ musicaFocoInput.addEventListener('change', () => {
 });
 
 focoBt.addEventListener('click', () => {
+    tempoDecorridoEmSegundos = 1500;
     alterarContexto('foco');
     focoBt.classList.add('active');
 })
 
 curtoBt.addEventListener('click', () => {
+    tempoDecorridoEmSegundos = 300;
     alterarContexto('descanso-curto');
     curtoBt.classList.add('active');
     foc
 });
 
 longoBt.addEventListener('click', () => {
+    tempoDecorridoEmSegundos = 900;
     alterarContexto('descanso-longo');
     longoBt.classList.add('active');
 });
 
 function alterarContexto(contexto) {
+    mostrarTempo();
     botoes.forEach((botao) => {
         botao.classList.remove('active');
     });
@@ -73,7 +77,7 @@ Faça uma pausa longa.<br><strong class="app__title-strong">Recarregue suas ener
 
 const contagemRegressiva = () => {
     if (tempoDecorridoEmSegundos <= 0){
-        // audioZerar.play();
+        audioZerar.play();
         alert('O tempo acabou!');
         zerar();
         return;
