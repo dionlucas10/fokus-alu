@@ -8,7 +8,7 @@ O projeto foi desenvolvido com foco em **JavaScript puro**, manipulação do DOM
 ## 📸 Preview do Projeto
 
 > Abra o projeto no navegador para visualizar a interface completa.  
-(Opcional: você pode adicionar screenshots aqui futuramente)
+https://fokus-alu.vercel.app/
 
 ---
 
